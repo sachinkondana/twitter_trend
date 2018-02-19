@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  api:"http://localhost/tweetcard/server/"
+  api:"https://sachinmarch.000webhostapp.com/",
+  // api:"http://localhost/tweetcard/server/"
 };
