@@ -1,0 +1,15 @@
+<div class="tw-tile" *ngFor="let ts of tweet;let i=index" data-aos="fade-up" data-aos-offset="0">
+    <h2 [innerHTML]="ts.name"></h2>
+    <div class="wrap">
+        <img class="main-img" *ngIf="ts.tweetpic" [src]="ts.tweetpic" alt="">
+        <div class="desc">
+            <div class="left">
+                <img *ngIf="ts.profilepic" [src]="ts.profilepic" alt="">
+            </div>
+            <div class="right">
+                <h3 [innerHTML]="ts.name"></h3>
+                <p [innerHTML]="decodeData(ts.query)"></p>
+            </div>
+        </div>
+    </div>
+</div>
