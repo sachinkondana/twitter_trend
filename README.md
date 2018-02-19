@@ -12,6 +12,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+Host `server` php files in an PHP server. These files includes APIs which communicate with twitter oauth1.1 apis with along with access token.
+
+Place the API path's in environment key `api`.
+
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
