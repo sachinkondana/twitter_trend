@@ -15,3 +15,17 @@ body {
 .tw-container {
     padding: 83px 40px 15px 40px;
 }
+
+a,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blue {
+    color: $themecolor;
+}
+
+i {
+    font-style: normal;
+}

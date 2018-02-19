@@ -4,7 +4,7 @@ import {SlimLoadingBarService} from 'ng2-slim-loading-bar';
 @Injectable()
 export class LoaderService {
 
-  constructor(private slimLoadingBarService: SlimLoadingBarService,) { }
+  constructor(private slimLoadingBarService: SlimLoadingBarService) { }
 
   startLoading() {
       this.slimLoadingBarService.start(() => {

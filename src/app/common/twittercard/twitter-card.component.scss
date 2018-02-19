@@ -7,11 +7,14 @@
         box-shadow: 1px 1px 10px #E1E8EE;
     }
     h2 {
-        font-family: $subheaderfn;
-        font-size: 13px;
-        padding: 15px 0;
-        color: #000000;
-        text-decoration: none;
+        &,
+        * {
+            font-family: $subheaderfn;
+            font-size: 13px;
+            padding: 15px 0;
+            color: #000000;
+            text-decoration: none;
+        }
     }
     .main-img {
         min-width: 100%;
@@ -89,7 +92,10 @@
             }
         }
         h2 {
-            padding: 5px 0;
+            &,
+            * {
+                padding: 5px 0;
+            }
         }
     }
 }

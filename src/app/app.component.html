@@ -5,7 +5,9 @@
         <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}" class="menu" routerLink="/trend">Trending</li>
     </ul>
     <ul class="nav nav-tabs pull-right">
-        <input class="searchbox" type="text" placeholder="Whats happening" />
+        <form #searchForm="ngForm" autocomplete="off" (ngSubmit)="searchForm.valid && serachTweet()">
+            <input class="searchbox" type="text" placeholder="Whats happening" name="search" [(ngModel)]="searchkey" #search="ngModel" (keyup)="searchForm.valid && serachTweet()" />
+        </form>
     </ul>
 </div>
 <router-outlet></router-outlet>

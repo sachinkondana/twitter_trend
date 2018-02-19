@@ -20,6 +20,9 @@ export class TwitterCardComponent implements OnInit{
   }
 
   public decodeData(iStr):string{
-    return decodeURIComponent(iStr);
+    let rt:any = decodeURIComponent(iStr);
+    rt = rt.replace(new RegExp(" ", 'g'), " </i>");    
+    rt = rt.replace(new RegExp("#", 'g'), "<i class='blue'>#");
+    return rt;
   }
 }

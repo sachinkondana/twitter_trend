@@ -1,3 +1,16 @@
 <div class="container-fluid tw-container">
-    recent works!
+    <div class="alert alert-danger" *ngIf="error">
+        {{error}}
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <twitter-card [tweet]="tweets.col1"></twitter-card>
+        </div>
+        <div class="col-md-4">
+            <twitter-card [tweet]="tweets.col2"></twitter-card>
+        </div>
+        <div class="col-md-4">
+            <twitter-card [tweet]="tweets.col3"></twitter-card>
+        </div>
+    </div>
 </div>

@@ -1,14 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule }    from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import {SlimLoadingBarModule} from 'ng2-slim-loading-bar';
 
-
 import { LoaderService } from './common/loader.service';
 import { TwitterCardComponent } from './common/twittercard/twitter-card.component';
-
 
 import { AppComponent } from './app.component';
 import { RecentComponent } from './recent/recent.component';
@@ -32,6 +31,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     SlimLoadingBarModule.forRoot(),
     RouterModule.forRoot(
